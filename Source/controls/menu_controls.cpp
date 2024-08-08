@@ -41,15 +41,15 @@ std::vector<MenuAction> GetMenuActions(const SDL_Event &event)
 
 		if (!ctrlEvent.up) {
 			switch (TranslateTo(GamepadType, ctrlEvent.button)) {
-			case ControllerButton_BUTTON_A:
+			case ControllerButton_BUTTON_B:
 			case ControllerButton_BUTTON_START:
 				menuActions.push_back(MenuAction_SELECT);
 				break;
 			case ControllerButton_BUTTON_BACK:
-			case ControllerButton_BUTTON_B:
+			case ControllerButton_BUTTON_A:
 				menuActions.push_back(MenuAction_BACK);
 				break;
-			case ControllerButton_BUTTON_X:
+			case ControllerButton_BUTTON_Y:
 				menuActions.push_back(MenuAction_DELETE);
 				break;
 			case ControllerButton_BUTTON_DPAD_UP:

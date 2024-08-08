@@ -30,11 +30,11 @@ SDL_Keycode TranslateControllerButtonToGameMenuKey(ControllerButton controllerBu
 	switch (TranslateTo(GamepadType, controllerButton)) {
 	case ControllerButton_BUTTON_A:
 	case ControllerButton_BUTTON_Y:
-		return SDLK_RETURN;
-	case ControllerButton_BUTTON_B:
 	case ControllerButton_BUTTON_BACK:
-	case ControllerButton_BUTTON_START:
 		return SDLK_ESCAPE;
+	case ControllerButton_BUTTON_B:
+	case ControllerButton_BUTTON_START:
+		return SDLK_RETURN;
 	case ControllerButton_BUTTON_LEFTSTICK:
 		return SDLK_TAB; // Map
 	default:
@@ -46,12 +46,12 @@ SDL_Keycode TranslateControllerButtonToMenuKey(ControllerButton controllerButton
 {
 	switch (TranslateTo(GamepadType, controllerButton)) {
 	case ControllerButton_BUTTON_A:
-		return SDLK_SPACE;
-	case ControllerButton_BUTTON_B:
 	case ControllerButton_BUTTON_BACK:
-	case ControllerButton_BUTTON_START:
 		return SDLK_ESCAPE;
-	case ControllerButton_BUTTON_Y:
+	case ControllerButton_BUTTON_B:
+	case ControllerButton_BUTTON_START:
+		return SDLK_SPACE;
+	case ControllerButton_BUTTON_X:
 		return SDLK_RETURN;
 	case ControllerButton_BUTTON_LEFTSTICK:
 		return SDLK_TAB; // Map
@@ -73,9 +73,9 @@ SDL_Keycode TranslateControllerButtonToQuestLogKey(ControllerButton controllerBu
 	switch (TranslateTo(GamepadType, controllerButton)) {
 	case ControllerButton_BUTTON_A:
 	case ControllerButton_BUTTON_Y:
-		return SDLK_RETURN;
-	case ControllerButton_BUTTON_B:
 		return SDLK_SPACE;
+	case ControllerButton_BUTTON_B:
+		return SDLK_RETURN;
 	case ControllerButton_BUTTON_LEFTSTICK:
 		return SDLK_TAB; // Map
 	default:
@@ -86,9 +86,10 @@ SDL_Keycode TranslateControllerButtonToQuestLogKey(ControllerButton controllerBu
 SDL_Keycode TranslateControllerButtonToSpellbookKey(ControllerButton controllerButton)
 {
 	switch (TranslateTo(GamepadType, controllerButton)) {
-	case ControllerButton_BUTTON_B:
-		return SDLK_SPACE;
+	case ControllerButton_BUTTON_A:
 	case ControllerButton_BUTTON_Y:
+		return SDLK_SPACE;
+	case ControllerButton_BUTTON_B:
 		return SDLK_RETURN;
 	case ControllerButton_BUTTON_LEFTSTICK:
 		return SDLK_TAB; // Map

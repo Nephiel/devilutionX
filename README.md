@@ -1,3 +1,9 @@
+## This fork, intended for Switch builds, swaps A/B button behavior *in menus only*.
+
+Upstream 1.5.2 allows remapping gamepad buttons, but that remapping does not affect menu navigation, so you can end up with inconsistent behavior where e.g. the A button confirms an action in game, but cancels in menus.
+
+This fork swaps the default button behavior *for menus only* so A button accepts or confirms options in menus, and B cancels or takes you back to the previous menu.
+
 <p align="center">
 <img width="554" src="https://user-images.githubusercontent.com/204594/113575181-c946a400-961d-11eb-8347-a8829fa3830c.png">
 </p>
