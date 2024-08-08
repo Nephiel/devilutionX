@@ -2,7 +2,7 @@
 # This build swaps the default A/B button behavior *for menus only* so A button accepts or confirms options in menus, and B cancels or takes you back to the previous menu.
 
 # How To Install:
- - Put `devilutionx.nro` and `devilutionx.mpq` in into `/switch/devilutionx`
+ - Put `devilutionx.nro` into `/switch/devilutionx`
  - Copy diabdat.mpq from your CD (or GoG install folder) to `/switch/devilutionx`.
  - To run the Diablo: Hellfire expansion you will need to also copy hellfire.mpq, hfmonk.mpq, hfmusic.mpq, hfvoice.mpq.
  - For Chinese, Japanese, and Korean text support download https://github.com/diasurgical/devilutionx-assets/releases/download/v2/fonts.mpq and add it to the game folder.
@@ -44,7 +44,7 @@ For a full list of changes see our changelog: https://github.com/diasurgical/dev
 # Legal
 DevilutionX is released to the Public Domain. The documentation and functionality provided by DevilutionX may only be utilized with assets provided by ownership of Diablo.
 
-The source code in this repository is for non-commerical use only. If you use the source code you may not charge others for access to it or any derivative work thereof.
+The source code in this repository is for non-commercial use only. If you use the source code you may not charge others for access to it or any derivative work thereof.
 
 Diablo® - Copyright © 1996 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
 
